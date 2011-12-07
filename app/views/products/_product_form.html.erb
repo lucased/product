@@ -1,0 +1,4 @@
+<%= form_for @product, :url => path, :html => { :multipart => true } do |form| %>
+  Image: <%= form.file_field :image %><br />
+  PDF:   <%= form.file_field :pdf %><br />
+<% end %>
