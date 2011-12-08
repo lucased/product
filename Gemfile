@@ -31,7 +31,6 @@ gem 'jquery-rails'
 # To use debugger
 
 gem "paperclip", "~> 2.4"
-gem "authlogic"
 gem "rspec", "2.7"
 gem "rspec-rails", "2.7"
 
