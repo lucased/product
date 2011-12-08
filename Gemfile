@@ -29,9 +29,9 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug'
 
 gem "paperclip", "~> 2.4"
+gem "authlogic"
 gem "rspec", "2.7"
 gem "rspec-rails", "2.7"
 
