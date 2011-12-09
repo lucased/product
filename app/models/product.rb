@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
   has_many :specs
   
-  validates_presence_of :image_url, :pdf_url, :title
+  validates_presence_of :image_file_name, :pdf_file_name, :title
   validates :specs, :length => { :minimum => 1 }
   
   has_attached_file :image, :styles => { 
