@@ -14,8 +14,8 @@ describe Spec do
     it "should be valid with title & value, and belong to a product" do
       @spec.title = "Shutter Speed"
       @spec.value = "fast"
-      @spec.product = Product.new(:image_url => "some image url",
-                                  :pdf_url => "some pdf url",
+      @spec.product = Product.new(:image_file_name => "some image url",
+                                  :pdf_file_name => "some pdf url",
                                   :title => "foo cam")
       @spec.should be_valid
     end
