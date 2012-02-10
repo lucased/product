@@ -1,8 +1,9 @@
 class Product < ActiveRecord::Base
   has_many :specs
+  belongs_to :category
+  belongs_to :sub_category
   
-  validates_presence_of :image_file_name, :pdf_file_name, :title
-  validates :specs, :length => { :minimum => 1 }
+  validates_presence_of :image_file_name, :pdf_file_name, :title, :category
   
   has_attached_file :image, :styles => { 
                                          :standard => "<455x190>", 
@@ -10,4 +11,6 @@ class Product < ActiveRecord::Base
                                         }
                                          
   has_attached_file :pdf
+  
+  
 end

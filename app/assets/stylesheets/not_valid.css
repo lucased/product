@@ -1,0 +1,13 @@
+#footer span.time_ago, th{ text-shadow: #000 1px 1px 1px;}
+textarea { resize: none;}
+.contactform input, #c_message, .blog_comment_form input, #blog_comment_form_message, .blog_comment_body, .noti_error, .noti_success, .noti_warning, .noti_notification{ -moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px;}
+.contactform input.error, #c_message.error{ box-shadow: 0px 0px 5px #ffa6a6; -webkit-box-shadow: 0px 0px 5px #ffa6a6; -moz-box-shadow: 0px 0px 5px #ffa6a6;}
+#searchform input{ -moz-border-radius-topleft:5px; border-top-left-radius:5px; -webkit-border-top-left-radius:5px; -moz-border-radius-bottomleft:5px; border-bottom-left-radius:5px; -webkit-border-bottom-left-radius:5px;}
+#searchform input#searchformbutton{ -moz-border-radius:0; border-radius:0; -webkit-border-radius:0;}
+
+::selection { background:#ff7200; color:#000;}
+::-moz-selection { background:#ff7200; color:#000;}
+::-webkit-selection { background:#ff7200; color:#000;}
+a::selection { color:#fff;}
+a::-moz-selection {color:#fff;}
+a::-webkit-selection { color:#fff;}

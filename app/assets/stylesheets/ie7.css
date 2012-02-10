@@ -1,0 +1,6 @@
+a.button span {padding: 6px 11px 6px 20px;}
+#shadow{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* PNG fix for IE6 & 7 */      
+	zoom: 1;
+}
+#navigation li a{padding:5px 15px 5px 0;}

@@ -1,0 +1,105 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+body {
+  line-height: 1
+}
+ol,ul {
+  list-style: none
+}
+blockquote,q {
+  quotes: none
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none
+}
+:focus {
+  outline: 0
+}
+ins {
+  text-decoration: none
+}
+del {
+  text-decoration: line-through
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.broof_grid {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.one, .one_half, .one_third, .one_fourth, .two_third, .three_fourth, .has_sidebar_left .one,.has_sidebar_right .one, .has_sidebar_left .one_half,.has_sidebar_right .one_half, .has_sidebar_left .one_third,.has_sidebar_right .one_third, .has_sidebar_left .one_fourth,.has_sidebar_right .one_fourth {
+  position: relative;
+  text-align: left;
+  /*justify looks also good*/
+  float:left;
+  margin: 15px 30px 15px 0;
+}
+
+.one th, .one_half th, .one_third th, .one_fourth th, .two_third th, .three_fourth th {
+  text-align: center;
+}
+
+.one {
+  width: 960px;
+  margin-right: 0;
+}
+.one_half {
+  width: 465px;
+}
+.one_third {
+  width: 300px;
+}
+.one_fourth {
+  width: 217px;
+}
+.two_third {
+  width: 630px;
+}
+.three_fourth {
+  width: 711px;
+}
+
+.has_sidebar_right {
+  width: 600px;
+  padding-right: 30px;
+}
+.has_sidebar_left {
+  width: 600px;
+  padding-left: 30px;
+}
+
+.has_sidebar_left .one,.has_sidebar_right .one {
+  width: 600px;
+  margin-right: 0;
+}
+.has_sidebar_left .one_half,.has_sidebar_right .one_half {
+  width: 285px;
+}
+.has_sidebar_left .one_third,.has_sidebar_right .one_third {
+  width: 180px;
+}
+.has_sidebar_left .one_fourth,.has_sidebar_right .one_fourth {
+  width: 127px;
+}
+
+.has_sidebar_left .one_third.last,.has_sidebar_right .one_third.last,.has_sidebar_left .one_half.last,.has_sidebar_right .one_half.last,.has_sidebar_left .one_fourth.last,.has_sidebar_right .one_fourth.last {
+  margin-right: 0;
+}
+
+.last {
+  margin-right: 0;
+}
+.clear {
+  clear: both;
+}

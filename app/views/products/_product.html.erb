@@ -1,0 +1,7 @@
+<li class ="one_third">
+	<span class="title"><%= product.title %></span>
+	<a id="various" href="#inline1"><%= image_tag product.image.url(:thumb) %></a>
+	
+	<p><%= link_to "Edit", edit_product_path(product) %></p>
+	
+</li>

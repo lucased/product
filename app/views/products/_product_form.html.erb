@@ -1,4 +1,12 @@
-<%= form_for @product, :url => path, :html => { :multipart => true } do |form| %>
-  Image: <%= form.file_field :image %><br />
-  PDF:   <%= form.file_field :pdf %><br />
+<%= semantic_form_for @product, :url => path, :html => { :multipart => true } do |form| %>
+   <%= form.input :title %>
+   <%= form.input :description %>
+   <%= form.input :category, :as => :select, :collection => Category.all %>
+   <%= form.input :sub_category, :as => :select, 
+                                 :collection => SubCategory.all, 
+                                 :input_html => { :disabled => true } %>
+   <%= form.input :image, :as => :file %>
+   <%= image_tag @product.image.url(:thumb) %>
+   <%= form.input :pdf, :as => :file %>
+   <%= form.commit_button %>
 <% end %>

@@ -1,0 +1,51 @@
+body{ background-color:#f4f4f4; color:#666;}
+
+/*colors*/
+
+	/*links*/
+	a{ color:#ff7200;}
+	a:hover{color:#000;}
+	
+	#footer a:hover{ color:#fff;}
+	#footer span.time_ago{ color:#2e2d2d;}
+	
+	/*headings*/
+	h1, h2, h3, h4, h5, h6{ color:#111;}
+	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{ color:#ff7200;}
+	h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline{ border-bottom:1px solid #e3e3e3;}
+	.header_devider h1 { color:#fff;}
+
+/*Background images*/
+
+	/*Header*/
+	#top_wrapper{ background:url(stone/repeat.jpg) top center repeat;}
+	#top_wrapper_line_t{ background:url(stone/top_wrapper_line_top.png) repeat-x;}
+	#top_wrapper_line_b{ background:url(stone/top_wrapper_line_bottom.png) repeat-x;}
+
+	#header{ background:url(stone/head_bg.jpg) no-repeat;}
+		.header_devider{background:url(stone/head_devider.png) no-repeat;}
+		
+		#navigation li{ background:url(stone/nav_li_left.png) top left no-repeat;}
+		#navigation li a{ background:url(stone/nav_li_right.png) top right no-repeat; color:#a6a6a6;}
+		#navigation li a:hover, #navigation li a.active { color:#fff;}
+			#navigation ul{background:url(stone/dropdown_repeat.png) repeat-y;}
+				#navigation ul li{ border-bottom:1px solid #121212; border-top:1px solid #2e2e2e;}
+				#navigation ul li.dropdown_top{ background:url(stone/dropdown_top.png) no-repeat;}
+				#navigation ul li.dropdown_bottom{ background:url(stone/dropdown_bottom.png) no-repeat;}
+
+	/*Footer*/
+	#footer_wrapper{ background:url(stone/repeat.jpg) top center repeat;}
+		#footer_wrapper_line{ background:url(stone/footer_wrapper_line.png) repeat-x;}
+		#footer{ background:url(stone/head_bg.jpg) no-repeat; color:#504f4f;}
+		#footer h3{ color:#f4f4f4;}
+			.footer_c_top{ background:url(stone/footer_c_top.png) no-repeat;}
+			.footer_c_bottom{ background:url(stone/footer_c_bottom.png) no-repeat;}
+			.footer_c_repeat{ background:url(stone/footer_c_repeat.png) repeat-y;}
+		
+			#footer input{ background:url(stone/footer_contact_input.png) no-repeat; color:#6c6c6c;}
+			#footer input#footer_submit{ background:url(stone/footer_contact_submit.png) no-repeat;}
+			#footer_textarea{ background:url(stone/footer_contact_textfield.png) no-repeat; color:#6c6c6c;}
+		
+	#footer_very_bottom_wrapper{ background:url(stone/footer_very_bottom.png) repeat-x; color:#3f3f3f;}
+	#footer_very_bottom_wrapper ul li a	{ color:#3f3f3f;}
+	#footer_very_bottom_wrapper ul li a:hover {color:#ff7200;}

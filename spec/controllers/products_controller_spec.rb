@@ -2,6 +2,18 @@ require 'spec_helper'
 
 describe ProductsController do
 
+  before(:each) do
+    @product = mock_model(Product)
+  end
+  
+  def mock_product
+    Product.should_receive(:find).with("1").and_return(@product)
+  end
+  
+  def stub_product
+    Product.stub!(:find).with("1").and_return(@product)
+  end
+
   describe "index" do
     
     before(:each) do
@@ -18,7 +30,7 @@ describe ProductsController do
   
   describe "new" do
     before(:each) do
-      @product = mock_model(Product)
+      
     end
     
     it "should render new product form" do
@@ -31,14 +43,123 @@ describe ProductsController do
   describe "edit" do
     before(:each) do
       @product = mock_model(Product)
+      stub_product
     end
     
-    it "should return a product for editing" do
-      Product.should_receive(:find).with("1").and_return(@product)
-      
+    def get_edit
       get :edit, :id => 1
     end
     
+    it "should return a product for editing" do
+      mock_product
+      get_edit
+    end
+    
+    it "assigns a instance variable" do
+      get_edit
+      assigns[:product].should eql @product
+    end
+    
+    it "render the edit template" do
+      get_edit
+      response.should render_template("products/edit")
+    end
+    
+  end
+  
+  describe "create" do
+    
+    before(:each) do
+      @form_data = {
+        :title => "some title"
+      }
+      Product.stub!(:new).with(@form_data.stringify_keys).and_return(@product)
+      @product.stub!(:save).and_return(true)
+    end
+    
+    def post_create
+      post :create, :product => @form_data
+    end
+
+    it "should insatiate product with form data" do
+      Product.should_receive(:new).with(@form_data.stringify_keys)
+      
+      post_create  
+    end
+    
+    it "should set a product instance var" do
+      Product.should_receive(:new).with(@form_data.stringify_keys).and_return(@product)
+      post_create
+      assigns[:product].should eql @product
+    end
+    
+    it "should save the product to the store on success" do
+      @product.should_receive(:save).and_return(true)
+      post_create
+    end
+    
+    it "should redirect to product index on success" do
+      post_create
+      response.should redirect_to products_path
+    end
+    
+    it "should set the flash success message" do
+      post_create
+      flash[:notice].should eq "Product created!"
+    end
+    
+    it "should re render the new template on failure" do
+      @product.should_receive(:save).and_return(false)
+      post_create
+      response.should render_template("products/new")
+    end
+    
+    it "should set the flash success message" do
+      @product.should_receive(:save).and_return(false)
+      post_create
+      flash.now[:alert].should eq "Failed to save!"
+    end
+    
+    
   end
 
+  describe "update" do
+    
+    before(:each) do
+      stub_product
+      @product_hash = {"some_key" => "some value"}
+      @product.stub!(:update_attributes).with(@product_hash).and_return(true)
+    end
+    
+    def put_update
+      put :update, :id => 1, :product => @product_hash
+    end
+    
+    it "should retrieve the product" do
+      mock_product
+      put_update
+    end
+    
+    it "should update the product" do
+      @product.should_receive(:update_attributes).with(@product_hash).and_return(true)
+      put_update
+      flash[:notice].should eq "Product updated!"
+    end
+    
+    it "does something" do
+      @product.should_receive(:update_attributes).with(@product_hash).and_return(false)
+      put_update
+      flash[:alert].should eq "Failed to update!"      
+    end
+
+    
+    it "should re render then edit template if save fails" do
+      @product.should_receive(:update_attributes).with(@product_hash).and_return(false)
+      put_update
+      response.should render_template("products/edit")
+    end
+
+    
+  end
+  
 end

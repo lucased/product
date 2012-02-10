@@ -1,0 +1,51 @@
+body{ background-color:#f4f4f4; color:#666;}
+
+/*colors*/
+
+	/*links*/
+	a{ color:#ff7200;}
+	a:hover{color:#000;}
+	
+	#footer a:hover{ color:#fff;}
+	#footer span.time_ago{ color:#2e2d2d;}
+	
+	/*headings*/
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ color:#111;}
+	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{ color:#ff7200;}
+	h1.underline, h2.underline, h3.underline, h4.underline, h5.underline, h6.underline{ border-bottom:1px solid #e3e3e3;}
+	.header_devider h1 { color:#fff;}
+
+/*Background images*/
+
+	/*Header*/
+	#top_wrapper{ background-color:#2b0125;}
+	#top_wrapper_line_t{ background:url(carbon_pink/top_wrapper_line_top.png) repeat-x;}
+	#top_wrapper_line_b{ background:url(carbon_pink/top_wrapper_line_bottom.png) repeat-x;}
+
+	#header{ background:url(carbon_pink/head_bg.jpg) no-repeat;}
+		.header_devider{background:url(carbon_pink/head_devider.png) no-repeat;}
+		
+		#navigation li{ background:url(carbon_pink/nav_li_left.png) top left no-repeat;}
+		#navigation li a{ background:url(carbon_pink/nav_li_right.png) top right no-repeat; color:#a6a6a6;}
+		#navigation li a:hover, #navigation li a.active { color:#fff;}
+			#navigation ul{background:url(carbon_pink/dropdown_repeat.png) repeat-y;}
+				#navigation ul li{ border-bottom:1px solid #121212; border-top:1px solid #2e2e2e;}
+				#navigation ul li.dropdown_top{ background:url(carbon_pink/dropdown_top.png) no-repeat;}
+				#navigation ul li.dropdown_bottom{ background:url(carbon_pink/dropdown_bottom.png) no-repeat;}
+
+	/*Footer*/
+	#footer_wrapper{ background-color:#2b0125;}
+		#footer_wrapper_line{ background:url(carbon_pink/footer_wrapper_line.png) repeat-x;}
+		#footer{ background:url(carbon_pink/head_bg.jpg) no-repeat; color:#504f4f;}
+		#footer h3{ color:#f4f4f4;}
+			.footer_c_top{ background:url(carbon_pink/footer_c_top.png) no-repeat;}
+			.footer_c_bottom{ background:url(carbon_pink/footer_c_bottom.png) no-repeat;}
+			.footer_c_repeat{ background:url(carbon_pink/footer_c_repeat.png) repeat-y; color:#666666;}
+		
+			#footer input{ background:url(carbon_pink/footer_contact_input.png) no-repeat; color:#666666;}
+			#footer input#footer_submit{ background:url(carbon_pink/footer_contact_submit.png) no-repeat;}
+			#footer_textarea{ background:url(carbon_pink/footer_contact_textfield.png) no-repeat; color:#666666;}
+		
+	#footer_very_bottom_wrapper{ background:url(carbon_pink/footer_very_bottom.png) repeat-x; color:#57004d;}
+	#footer_very_bottom_wrapper ul li a	{ color:#57004d;}
+	#footer_very_bottom_wrapper ul li a:hover {color:#ff7200;}

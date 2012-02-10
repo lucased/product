@@ -31,9 +31,17 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+gem "bcrypt-ruby"
 gem "paperclip", "~> 2.4"
-gem "rspec", "2.7"
-gem "rspec-rails", "2.7"
+gem "formtastic"
+
+group :test, :development do
+  gem "rspec", "2.7"
+  gem "rspec-rails", "2.7"
+  gem "shoulda-matchers"
+  gem "simplecov"
+  gem "cucumber-rails"
+end
 
 
 
