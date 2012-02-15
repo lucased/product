@@ -1,6 +1,6 @@
 class AlterProductAddCategoryId < ActiveRecord::Migration
   def up
-    add_column :products, :category_id, :interger
+    add_column :products, :category_id, :integer
   end
 
   def down
