@@ -1,0 +1,5 @@
+<%= semantic_form_for @spec, :url => product_specs_path(@product) do |form| %>
+ <%= form.input :title %>
+ <%= form.input :value %>
+ <%= form.commit_button("Save") %>
+<% end %>

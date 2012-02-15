@@ -1,12 +1,20 @@
 Fotos::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/about"
-
-  get "pages/gallery"
-
-  get "pages/contact"
-
+  
+  get "login" => "sessions#new", :as => "login"
+  get "logout" => "sessions#destroy", :as => "logout"
+  
+  get "signup" => "users#new", :as => "signup"
+  
+  get "pages/home" => "pages#home"
+  get "pages/about" => "pages#about"
+  get "pages/gallery" => "pages#gallery"
+  get "pages/contact" => "pages#contact"
+      
+  root :to => "pages#home"
+  
+  match "products/category_search/:term" => "products_search#category_search"
+  match "products/sub_category_search/:term" => "products_search#sub_category_search"
+  
   resources :products  do
     resources :specs, :controller => "products/specs"
     resource :image, :controller => "products/image"

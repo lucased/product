@@ -12,5 +12,7 @@ class Product < ActiveRecord::Base
                                          
   has_attached_file :pdf
   
+  delegate :sub_category_name, :to => :sub_category
+  
   
 end

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Spectrum Camera Cranes</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= safe_stylesheet_link_tag %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
@@ -14,13 +14,15 @@
     	});
    	</script>
 
-
-    <script type="text/javascript">
-		Cufon.replace('h1, h2, h3, h4, h5, h6, a.button');
-	</script>
-
 </head>
 <body id="dynamic">
+	
+	<div id="login">
+		<%= user_login %>
+		<% content_for_admin do  %>
+			<%= link_to "new", new_product_path %>
+		<% end %>
+	</div>
 
 <% flash.each do |name, message| %>
 	<%= content_tag(:div, message, :class => name) %>

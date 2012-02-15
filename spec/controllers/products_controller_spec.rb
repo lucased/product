@@ -162,4 +162,44 @@ describe ProductsController do
     
   end
   
+  describe "destroy" do
+    
+    before(:each) do
+      Product.stub!(:find).with("1").and_return(@product)
+    end
+    
+    def delete_destroy
+      delete :destroy, :id => 1
+    end
+    
+    it "should retrieve the product" do
+      Product.should_receive(:find).with("1")
+      delete_destroy
+    end
+    
+    it "should assign an instance product variable" do
+      Product.should_receive(:find).with("1").and_return(@product)
+      delete_destroy
+      assigns[:product].should eql @product
+    end
+    
+    it "should delete product with success" do
+      @product.should_receive(:destroy).and_return(true)
+      delete_destroy
+      flash[:notice].should eq "Product deleted."
+    end
+    
+    it "should call delete on product and fail" do
+      @product.should_receive(:destroy).and_return(false)
+      delete_destroy
+      flash[:alert].should eq "Failed to delete product."
+    end
+  
+    it "should redirect to products index" do
+      delete_destroy
+      response.should redirect_to(products_path)
+    end
+    
+  end
+  
 end

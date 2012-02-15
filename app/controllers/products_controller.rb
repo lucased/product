@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   
   def index
+    @sub_categories = SubCategory.all
     @products = Product.all
   end
   
@@ -15,7 +16,7 @@ class ProductsController < ApplicationController
   def update
     get_product
     if @product.update_attributes(params[:product])
-      redirect_to products_path, :notice => "Product updated!"
+      redirect_to edit_product_path(@product), :notice => "Product updated!"
     else
       flash.now[:alert] = "Failed to update!"
       render "edit"
@@ -30,6 +31,17 @@ class ProductsController < ApplicationController
       flash.now[:alert] = "Failed to save!"
       render "new"
     end
+  end
+  
+  def destroy
+    get_product
+    if @product.destroy
+      flash[:notice] = "Product deleted."
+    else
+      flash[:alert] = "Failed to delete product."
+    end
+     
+    redirect_to products_path
   end
   
   private

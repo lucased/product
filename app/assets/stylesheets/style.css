@@ -130,7 +130,6 @@ body#dynamic #header {
   margin-top: 0px;
   float: right;
   position: relative;
-  z-index: 2000;
 }
 #navigation li {
   position: relative;

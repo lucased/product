@@ -1,0 +1,48 @@
+	<!-- <div class="modal hide fade" id="product_<%= product.id %>">
+	<div class="modal-header"><%= product.title %></div> 
+	<a class="close" data-dismiss="modal">×</a>
+	<%= image_tag product.image.url(:standard) %>
+		<table>
+			<tbody>
+				<tr class="d1">
+					<td>ARM REACH</td><td>1.8m</td>
+				</tr>
+				
+				<tr class="d2">
+					<td>TAIL LENGTH</td><td>1.5m</td>
+				</tr>
+				
+				<tr class="d1">
+					<td>OVER SLUNG HEIGHT</td><td>4.0m</td>
+				</tr>
+				
+				<tr class="d2">
+					<td>UNDERSLUNG HEIGHT</td><td>3.0m</td>
+				</tr>
+				
+				<tr class="d1">
+					<td>OPERATING FOOTPRINT</td><td>2.5m RADIUS</td>
+				</tr>
+			</tbody>
+		</table>
+		<a class="close" data-dismiss="modal">×</a>
+		<p><%= product.description %></p>
+		<a href="#" class="btn" data-dismiss="modal">Close</a>
+	</div> -->
+
+<div class="modal hide fade" id="product_<%= product.id %>">
+	<div class="modal">
+	  <div class="modal-header">
+	    <a class="close" data-dismiss="modal">×</a>
+	    <h3><%= product.title %><</h3>
+	  </div>
+	  <div class="modal-body">
+		   <%= image_tag product.image.url(:standard) %>
+		<p><%= product.description %></p>
+	
+	  </div>
+	  <div class="modal-footer">
+	    <a href="#" data-dismiss="modal" class="btn">Close</a>
+	  </div>
+	</div>
+</div>
