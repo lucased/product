@@ -1,18 +1,21 @@
 <ul id="navigation"><!-- navigation start -->
-						
-						<li><%= link_to_category_search "Jibs & Cranes" %></a>
-							<ul>
-								<% @sub_categories.each do |sub| %>
-								<li>
-									<%= link_to_sub_category_search sub.name  %>
-								</li>
-								<% end %>
-							</ul>
-						</li>
-						
-						<li><%= link_to_category_search "Remote Head's" %></li>
-						<li><%= link_to_category_search "Dollies & Tracks" %></li>
-						<li><%= link_to_category_search "Vehicals" %></li>
-						<li><%= link_to_category_search "Mounts & Rises" %></li>
-				
+
+	<li><%= link_to_category_search "Jibs & Cranes" %></a>
+		<ul>
+			<% @sub_categories.each do |sub| %>
+			<li>
+				<%= link_to_sub_category_search sub.name  %>
+			</li>
+			<% end %>
+		</ul>
+	</li>
+
+	<% @categories.each do |category| %>
+	<li>
+		<%= link_to_category_search category.name  %>
+	</li>
+	<% end %>
+
+
+
 </ul><!-- navigation end -->

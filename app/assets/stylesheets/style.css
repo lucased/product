@@ -119,6 +119,7 @@ body#dynamic #header {
   float: left;
   display: block;
   margin-top: 40px;
+  z-index: 1000;
 }
 
 #nav-wrap {
@@ -204,7 +205,7 @@ body#dynamic #header {
 .sidebar_right_top {
   width: 260px;
   padding: 50px 0 0 40px;
-  margin-top: -50px;
+  margin-top: -10px;
   background: url(sidebar_right_top.png) no-repeat;
 }
 .sidebar_right_bottom {
@@ -860,6 +861,15 @@ tr.d1 td {
 }
 tr.d2 td {
   background-color: #ffffff;
+}
+
+/*------------------------- SIGN UP / LOGIN ----------------------*/
+
+.center_box {
+  width: 200px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

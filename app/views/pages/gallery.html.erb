@@ -1,38 +1,30 @@
-<div id="wrapper"><!-- wrapper start -->
-    
-            <div id="top_wrapper"><!-- top wrapper start -->
-                <div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
-                
-                <div id="header" class="broof_grid"><!-- header start -->
-                
-                    <a href="index.php" id="logo"><img src="../images/logo.png" alt="logo" /></a><!-- Your logo here -->
-                    
-                    	<%= render "pages/nav"%>
-                    
-                    <div class="clear"></div><!-- clear navigation and logo -->
-                    
-                </div><!-- header end -->
-                
-            </div><!-- top wrapper end -->
-			
-    		<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
-    		
-    		<div class="broof_grid"><!-- content start -->
-				
-				<div id="gallery">
-					<img src="images/coin_slider/slide1.jpg">
-				</div>
-					
-            </div><!-- content end -->
-            
-        
-        <!-- Galleria Initiate -->
-       <script>
-            Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js');
-            $("#gallery").galleria({
-                width: 960,
-                height: 600,
-                picasa: 'useralbum:117874589813568739219/Scc', // 'galleriajs' is the username and 'Demo' is the album ID
-    			picasaOptions: { sort: 'date-posted-asc'}
-            });
-        </script>
+<div id="wrapper">
+	<!-- wrapper start -->
+	<div id="top_wrapper">
+		<!-- top wrapper start -->
+		<div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
+		<div id="header" class="broof_grid">
+			<!-- header start -->
+			<a href="index.php" id="logo" name="logo"><img src="../images/logo.png" alt="logo"></a><!-- Your logo here -->
+			<%= render "pages/nav"%>
+			<div class="clear"></div><!-- clear navigation and logo -->
+		</div><!-- header end -->
+	</div><!-- top wrapper end -->
+	<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
+	<div class="broof_grid">
+		<!-- content start -->
+		<div id="gallery">
+			<img src="images/coin_slider/slide1.jpg">
+		</div>
+	</div><!-- content end -->
+	<!-- Galleria Initiate -->
+	<script type="text/javascript">
+	Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js');
+	$("#gallery").galleria({
+		width: 960,
+		height: 600,
+		picasa: 'useralbum:117874589813568739219/Scc', // 'galleriajs' is the username and 'Demo' is the album ID
+		picasaOptions: { sort: 'date-posted-asc'}
+	});
+	</script>
+</div>

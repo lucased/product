@@ -1,0 +1,67 @@
+<div id="wrapper"><!-- wrapper start -->
+
+	<div id="top_wrapper"><!-- top wrapper start -->
+		<div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
+
+		<div id="header" class="broof_grid"><!-- header start -->
+
+			<a href="index.php" id="logo"><img src="../images/logo.png" alt="logo" /></a><!-- Your logo here -->
+
+			<%= render "pages/nav"%>
+
+			<div class="clear"></div><!-- clear navigation and logo -->					
+
+		</div><!-- header end -->
+
+	</div><!-- top wrapper end -->
+	<div id="top_wrapper_line_g"></div><!-- bottom line of the top wrapper -->
+
+	<div class="broof_grid"><!-- content start -->
+
+		<div class="two_third has_sidebar_right">
+
+			<h2><%= t('.contact_us') %></h2>
+			<p>Please fill in the form below and we will answer your question as soon as possible.</p>
+			<%= semantic_form_for @contact, :url => contacts_path do |f| %>
+			<%= f.input :name, :label => t('.name') if ContactUs.require_name %>
+			<%= f.input :email, :label => t('.email') %>
+			<%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %>
+			<%= f.input :message, :as => :text, :label => t('.message') %>
+			<%= f.action :submit, :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') } %>
+			<% end %>
+
+			<div class="devider_side"></div>
+
+		</div>
+
+		<div class="one_third sidebar_right_repeat last">
+			<div class="sidebar_right_top">
+
+				<div class="widget">
+					<h3>Contact Details</h3>
+					<p>93 Pitt Street Eltham Victoria, Australia  3095</p>
+					<p>
+
+						<iframe width="240" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=93+PITT+STREET+ELTHAM++%09%09++++++VICTORIA,+AUSTRALIA++3095+&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=48.374125,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=93+Pitt+St,+Eltham+Victoria+3095,+Australia&amp;z=14&amp;ll=-37.72084,145.148382&amp;output=embed"></iframe><br /><small><a href="http://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=93+PITT+STREET+ELTHAM++%09%09++++++VICTORIA,+AUSTRALIA++3095+&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=48.374125,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=93+Pitt+St,+Eltham+Victoria+3095,+Australia&amp;z=14&amp;ll=-37.72084,145.148382" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+					</p>
+
+				</div>
+
+				<div class="widget">
+					<h3>Andy Teleky</h3>
+					<p><span>Phone</span> – 0411 034 680 <br /> <span> </span><a href="mailto:andy@spectrumcameracranes.com.au">andy@spectrumcameracranes.com.au</a></p>
+				</div>
+
+				<div class="widget">
+					<h3>Graeme Daisley</h3>
+					<p><span>Phone</span> – 0419 553 424 <br /> <span> </span><a href="mailto:graeme@spectrumcameracranes.com.au">graeme@spectrumcameracranes.com.au</a></p>
+				</div>
+
+			</div>
+			<div class="sidebar_right_bottom"></div>			
+		</div>
+
+	</div><!-- content end -->
+
+

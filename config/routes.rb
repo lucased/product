@@ -8,7 +8,8 @@ Fotos::Application.routes.draw do
   get "pages/home" => "pages#home"
   get "pages/about" => "pages#about"
   get "pages/gallery" => "pages#gallery"
-  get "pages/contact" => "pages#contact"
+  #get "pages/contact" => "pages#contact"
+
       
   root :to => "pages#home"
   
@@ -22,5 +23,6 @@ Fotos::Application.routes.draw do
   
   resources :users
   resources :sessions
+  
 
 end

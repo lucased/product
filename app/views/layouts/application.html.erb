@@ -1,63 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spectrum Camera Cranes</title>
-  <%= safe_stylesheet_link_tag %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>Spectrum Camera Cranes</title>
+	<%= safe_stylesheet_link_tag %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 
-    <script type="text/javascript">
-    	$(window).load(function() {
-        	$('#slider').nivoSlider({
-        		effect: 'fade',
-        	});
-    	});
-   	</script>
+	<link rel="stylesheet" href="../lib/js/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../lib/js/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+
+	<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'fade',
+		});
+	});
+	</script>
 
 </head>
 <body id="dynamic">
-	
+
 	<div id="login">
 		<%= user_login %>
+		<%= link_to "Home", products_path %>
 		<% content_for_admin do  %>
-			<%= link_to "new", new_product_path %>
+		<%= link_to "new", new_product_path %>
 		<% end %>
 	</div>
 
-<% flash.each do |name, message| %>
+	<% flash.each do |name, message| %>
 	<%= content_tag(:div, message, :class => name) %>
-<% end %>
+	<% end %>
 
-<%= yield %>
+	<%= yield %>
 
-<div id="footer_clear"></div><!-- pushs the footer to the bottom -->
-        
-		</div><!-- wrapper end-->
-        
-        <div id="footer_wrapper"><!-- footer wrapper start -->
-            <div id="footer_wrapper_line"></div><!-- top line of the footer -->
-			
-            <div id="footer" class="broof_grid"><!-- footer start -->
-			
-				
-				
-            </div><!-- footer end -->
-			
-			<div id="footer_very_bottom_wrapper"><!-- footer bottom start -->
-				<div class="broof_grid">
-					<p>This site uses valid HTML and CSS. All content Copyright © 2010 BroOf.de</p>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="blog.html">Blog</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-				</div>
-			</div><!-- footer bottom end -->
-        
- </div><!-- footer wrapper end -->
+
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 	<span class="title"><%= product.title %></span>
 	<a id="various" data-toggle="modal" href="#product_<%= product.id %>"><%= image_tag product.image.url(:thumb) %></a>
 	<% content_for_admin do  %>
-		<p><%= link_to "Edit", edit_product_path(product) %> | <%= link_to "Delete", product_path(product), :method => :delete, :confirm => "Are you sure?" %></p>
-		 
+	<p><%= link_to "Edit", edit_product_path(product) %> | <%= link_to "Delete", product_path(product), :method => :delete, :confirm => "Are you sure?" %></p>
+
 	<% end %>
 </li>

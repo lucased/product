@@ -1,17 +1,21 @@
-<%= semantic_form_for @product, :url => path, :html => { :multipart => true } do |form| %>
-   <%= form.input :title %>
-   <%= form.input :description %>
-   <%= form.input :category, :as => :select, :collection => Category.all %>
-   <%= form.input :sub_category, :as => :select, 
-                                 :collection => SubCategory.all, 
-                                 :input_html => { :disabled => true } %>
-   <%= form.input :image, :as => :file %>
-   <%= image_tag @product.image.url(:thumb) %>
-   <%= form.input :pdf, :as => :file %>
+<div class="center_box">
 
-   <%= form.commit_button %>
+
+<%= semantic_form_for @product, :url => path, :html => { :multipart => true } do |form| %>
+<%= form.input :title %>
+<%= form.input :description %>
+<%= form.input :category, :as => :select, :collection => Category.all %>
+<%= form.input :sub_category, :as => :select, 
+:collection => SubCategory.all, 
+:input_html => { :disabled => true } %>
+<%= form.input :image, :as => :file %>
+<%= image_tag @product.image.url(:thumb) %>
+<%= form.input :pdf, :as => :file %>
+
+<%= form.commit_button %>
 <% end %>
 
 <% @product.specs do |spec| %>
 <%= spec.title + " " + spec.value if spec %>
 <% end %>
+</div><!-- .center_box -->

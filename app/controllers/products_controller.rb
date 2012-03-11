@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
+  include Shared::NavigationMethods
+  before_filter :sub_categories, :categories, :only => [:index, :new, :edit]
   
   def index
-    @sub_categories = SubCategory.all
     @products = Product.all
   end
   

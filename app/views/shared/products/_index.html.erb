@@ -1,29 +1,29 @@
 <body>
-    	<div id="wrapper"><!-- wrapper start -->
-            <div id="top_wrapper"><!-- top wrapper start -->
-                <div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
-                <div id="header" class="broof_grid"><!-- header start -->
-                
-                    <a href="index.php" id="logo"><img src="../../images/logo.png" alt="logo" /></a><!-- Your logo here -->
-                    
-                    	<%= render 'pages/nav'%>
-					
-                    <div class="clear"></div><!-- clear navigation and logo -->
-                </div><!-- header end -->
-            </div><!-- top wrapper end -->
+	<div id="wrapper"><!-- wrapper start -->
+		<div id="top_wrapper"><!-- top wrapper start -->
+			<div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
+			<div id="header" class="broof_grid"><!-- header start -->
 
-			<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
-    
-    		<div class="broof_grid"><!-- content start -->
-    		
-    				<%= render 'products/equip_nav'%>
-				
-				<div class="devider_top"></div>
-				
-				<ul class="portfolio">
-					<%= render :partial => 'products/product', :collection => @products %>
-				</ul>
-				
-					<%= render :partial => 'products/content_box', :collection => @products, :as => :product %>
-				
-            </div><!-- content end -->
+				<a href="index.php" id="logo"><img src="../../images/logo.png" alt="logo" /></a><!-- Your logo here -->
+
+				<%= render 'pages/nav'%>
+
+				<div class="clear"></div><!-- clear navigation and logo -->
+			</div><!-- header end -->
+		</div><!-- top wrapper end -->
+
+		<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
+
+		<div class="broof_grid"><!-- content start -->
+
+			<%= render 'products/equip_nav'%>
+
+			<div class="devider_top"></div>
+
+			<ul class="portfolio">
+				<%= render :partial => 'products/product', :collection => @products %>
+			</ul>
+
+			<%= render :partial => 'products/content_box', :collection => @products, :as => :product %>
+
+		</div><!-- content end -->
