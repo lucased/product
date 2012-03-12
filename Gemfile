@@ -33,6 +33,7 @@ gem "bcrypt-ruby"
 gem "paperclip", "~> 2.4"
 gem "formtastic", '>= 2.1.0'
 gem 'contact_us', '~> 0.2.0'
+gem 'formtastic-bootstrap'
 
 group :test, :development do
   gem 'sqlite3', '1.3.4'

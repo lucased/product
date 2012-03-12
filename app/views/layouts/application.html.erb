@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="../lib/js/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="../lib/js/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
 
+	<script src="../lib/js/galleria/galleria-1.2.5.min.js"></script>
+	<script src="../lib/js/galleria/plugins/picasa/galleria.picasa.min.js"></script>
+
 	<script type="text/javascript">
 	$(window).load(function() {
 		$('#slider').nivoSlider({
@@ -21,16 +24,27 @@
 <body id="dynamic">
 
 	<div id="login">
-		<%= user_login %>
+		<%= user_login %> |
 		<%= link_to "Home", products_path %>
-		<% content_for_admin do  %>
-		<%= link_to "new", new_product_path %>
+		<% content_for_admin do  %> |
+		<%= link_to "New", new_product_path %>
+		<% end %>
+	</div>
+	
+	<div class="alert-message">
+		<a class="close" data-dismiss="alert">×</a>
+		<% flash.each do |name, message| %>
+		<%= content_tag(:div, message, :class => name) %>
 		<% end %>
 	</div>
 
-	<% flash.each do |name, message| %>
-	<%= content_tag(:div, message, :class => name) %>
-	<% end %>
+	<script type="text/javascript">
+	window.setTimeout(function() {
+	    $(".alert-message").fadeTo(500, 0).slideUp(500, function(){
+	        $(this).remove(); 
+	    });
+	}, 5000);
+	</script>
 
 	<%= yield %>
 

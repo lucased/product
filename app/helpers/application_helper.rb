@@ -8,9 +8,9 @@ module ApplicationHelper
   
   def user_login
     if current_user 
-      link_to "logout", logout_path
+      link_to "Logout ", logout_path
     else
-      link_to "login", login_path
+      link_to "Login ", login_path
     end
   end
   
@@ -30,3 +30,5 @@ module ApplicationHelper
     link_to term, "/products/category_search/#{term}"
   end
 end
+
+

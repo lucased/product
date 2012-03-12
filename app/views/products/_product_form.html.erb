@@ -1,6 +1,5 @@
 <div class="center_box">
 
-
 <%= semantic_form_for @product, :url => path, :html => { :multipart => true } do |form| %>
 <%= form.input :title %>
 <%= form.input :description %>
@@ -18,4 +17,5 @@
 <% @product.specs do |spec| %>
 <%= spec.title + " " + spec.value if spec %>
 <% end %>
+
 </div><!-- .center_box -->
