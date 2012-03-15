@@ -448,11 +448,13 @@ ul.portfolio .one_fourth {
 }
 
 .one_third_a {
+  font-size: 15px;
   width: 145px;
   height: 140px;
   float: left;
 }
 .one_third_b {
+  font-size: 15px;
   width: 145px;
   height: 140px;
   float: left
@@ -839,6 +841,10 @@ td {
   border: 0px solid #dfdfdf;
   padding: 6px;
   text-align: center;
+}
+
+td img {
+  padding-right: 5px;
 }
 
 /*-------------------------------- Gallery -------------------------------------------------------*/

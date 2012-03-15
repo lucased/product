@@ -5,7 +5,7 @@
 		<div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
 		<div id="header" class="broof_grid">
 			<!-- header start -->
-			<a href="index.php" id="logo" name="logo"><img src="../images/logo.png" alt="logo"></a><!-- Your logo here -->
+			<a href="<%= root_path %>" id="logo" name="logo"><img src="../images/logo.png" alt="logo"></a><!-- Your logo here -->
 			<%= render "pages/nav" %>
 			<div class="clear"></div><!-- clear navigation and logo -->
 			<div class="theme-default">
@@ -32,106 +32,117 @@
 			<h3>
 				Services
 			</h3>
-			<div class="one_third_a">
-				<ul class="check_green">
-					<li>Cranes
-					</li>
-					<li>Jib's
-					</li>
-					<li>Remote Heads
-					</li>
-					<li>Dollies + Tracks
-					</li>
-					<li>Vehicle's
-					</li>
-					<li>Mount's + Risers
-					</li>
-				</ul>
-			</div>
-			<div class="one_third_b">
-				<ul class="check_green">
-					<li>Cranes
-					</li>
-					<li>Jib's
-					</li>
-					<li>Remote Heads
-					</li>
-					<li>Dollies + Tracks
-					</li>
-					<li>Vehicle's
-					</li>
-					<li>Mount's + Risers
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="one_third last">
-			<h3>
-				Clients
-			</h3>
-			<table>
+
+			<table class="table table-striped">
 				<tbody>
 					<tr>
-						<td>
-							<img src="../images/logo/seven.png">
-						</td>
-						<td>
-							<img src="../images/logo/ten.png">
-						</td>
-						<td>
-							<img src="../images/logo/abc.png">
-						</td>
-						<td>
-							<img src="../images/logo/endemol.png">
-						</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Cranes</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Jib's</td>
 					</tr>
+
 					<tr>
-						<td>
-							<img src="../images/logo/global.png">
-						</td>
-						<td>
-							<img src="../images/logo/nine.png">
-						</td>
-						<td>
-							<img src="../images/logo/sbs.png">
-						</td>
-						<td>
-							<img src="../images/logo/espn.png">
-						</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Remote Heads</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Dollies + Tracks</td>
 					</tr>
+
 					<tr>
-						<td>
-							<img src="../images/logo/sky.png">
-						</td>
-						<td>
-							<img src="../images/logo/one.png">
-						</td>
-						<td>
-							<img src="../images/logo/granada.png">
-						</td>
-						<td>
-							<img src="../images/logo/mtv.png">
-						</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Vehicle's</td>
+						<td><img src="../images/checklistpoint_green.png" alt="">Mount's + Risers</td>
 					</tr>
 				</tbody>
 			</table>
-		</div><!--
+		
 
-			<div class="clear"></div>
-
-			<div class="one_third"><img src="images/test_quality.png" alt="quality test" /></div>
-			<div class="one_third"><img src="images/test_flexibilty.png" alt="flexebility test" /></div>
-			<div class="one_third last"><img src="images/test_awesome.png" alt="awesome test" /></div>
-
-		-->
-		<div class="devider"></div>
-		<div class="one">
-			<h3>
-				Interested? Well then...
-			</h3>
-			<p>
-				Spectrum Camera Cranes are your specialists in the field of Camera Crane operation for the Film and Television Industry feel free to <a href="contact.php">contact</a> us with any questions.
-			</p>
+		<!-- <div class="one_third_a">
+			<ul class="check_green">
+				<li>Cranes
+				</li>
+				<li>Jib's
+				</li>
+				<li>Remote Heads
+				</li>
+			</ul>
 		</div>
-	</div><!-- content end -->
+		
+		<div class="one_third_b">
+			<ul class="check_green">
+				<li>Dollies + Tracks
+				</li>
+				<li>Vehicle's
+				</li>
+				<li>Mount's + Risers
+				</li>
+			</ul>
+		</div> -->
+
+	</div>
+	<div class="one_third last">
+		<h3>
+			Clients
+		</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<img src="../images/logo/seven.png">
+					</td>
+					<td>
+						<img src="../images/logo/ten.png">
+					</td>
+					<td>
+						<img src="../images/logo/abc.png">
+					</td>
+					<td>
+						<img src="../images/logo/endemol.png">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="../images/logo/global.png">
+					</td>
+					<td>
+						<img src="../images/logo/nine.png">
+					</td>
+					<td>
+						<img src="../images/logo/sbs.png">
+					</td>
+					<td>
+						<img src="../images/logo/espn.png">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="../images/logo/sky.png">
+					</td>
+					<td>
+						<img src="../images/logo/one.png">
+					</td>
+					<td>
+						<img src="../images/logo/granada.png">
+					</td>
+					<td>
+						<img src="../images/logo/mtv.png">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!--
+
+		<div class="clear"></div>
+
+		<div class="one_third"><img src="images/test_quality.png" alt="quality test" /></div>
+		<div class="one_third"><img src="images/test_flexibilty.png" alt="flexebility test" /></div>
+		<div class="one_third last"><img src="images/test_awesome.png" alt="awesome test" /></div>
+
+	-->
+	<div class="devider"></div>
+	<div class="one">
+		<h3>
+			Interested? Well then...
+		</h3>
+		<p>
+			Spectrum Camera Cranes are your specialists in the field of Camera Crane operation for the Film and Television Industry feel free to <a href="contact.php">contact</a> us with any questions.
+		</p>
+	</div>
+</div><!-- content end -->
 </div>
