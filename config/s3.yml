@@ -1,0 +1,12 @@
+development:
+  bucket: spectrum-bucket-dev
+  access_key_id: AKIAJH7POBJLDENHRNNQ
+  secret_access_key: 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
+test:
+  bucket: spectrum-bucket-test
+  access_key_id: AKIAJH7POBJLDENHRNNQ
+  secret_access_key: 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
+production:
+  bucket: spectrum=bucket-pro
+  access_key_id: AKIAJH7POBJLDENHRNNQ
+  secret_access_key: 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
