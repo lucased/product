@@ -437,7 +437,7 @@ ul.portfolio .one_half {
 ul.portfolio .one_third {
   width: 290px;
   height: 140px;
-  padding: 5px 5px 13px 5px;
+  padding: 5px 0px 13px 0px;
   background: url(portfolio_small_bg.png);
 }
 ul.portfolio .one_fourth {
@@ -872,8 +872,7 @@ tr.d2 td {
 /*------------------------- SIGN UP / LOGIN ----------------------*/
 
 .center_box, {
-  width: 200px;
-  height: 400px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
