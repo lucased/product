@@ -6,7 +6,10 @@
 		</div>
 		<div class="modal-body">
 			<%= image_tag product.image.url(:standard) %>
+			
 			<p><%= product.description %></p>
+			
+			<%= image_tag "file.gif" %><%= link_to "Download PDF", product.pdf.url(:original, false), :target => :blank %>
 
 		</div>
 		<div class="modal-footer">

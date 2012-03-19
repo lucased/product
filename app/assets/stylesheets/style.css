@@ -91,7 +91,6 @@ blockquote {
   height: 182px;
   padding: 9px 0;
   position: relative;
-  z-index: 3000;
 }
 .header_devider {
   width: 960px;
@@ -890,6 +889,12 @@ tr.d2 td {
   list-style-image: none;
   list-style: none;
   list-style-type: none;
+}
+
+/*------- CONTENT BOX ---------*/
+
+.modal-body img {
+  padding-right: 5px;
 }
 
 /*------- CARBON THEME ----------*/
