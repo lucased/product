@@ -17,7 +17,7 @@ SubCategory.delete_all
 "Remote Heads" => [],
 "Dollies & Tracks" => [],
 "Vehicles" => [],
-"Mounts & Risers" => [] }.each do |key, values|
+"Accessories" => [] }.each do |key, values|
   category = Category.find_by_name key 
   values.each do |value|
     SubCategory.create(
