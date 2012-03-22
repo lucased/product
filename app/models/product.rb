@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
 
   has_attached_file :image, 
   :styles => { 
-    :standard => "<455x190>", 
+    :standard => "<550>", 
     :thumb => "<290x140>" 
     },
     :storage => :s3,
