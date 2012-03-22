@@ -1,6 +1,6 @@
 <ul id="navigation" ><!-- navigation start -->
 
-	<li><%= link_to_category_search "Jibs & Cranes" %></a>
+	<!-- <li><%= link_to_category_search "Jibs & Cranes" %></a>
 		<ul>
 			<% @sub_categories.each do |sub| %>
 			<li>
@@ -8,11 +8,21 @@
 			</li>
 			<% end %>
 		</ul>
-	</li>
+	</li> -->
+
 
 	<% @categories.each do |category| %>
 	<li>
 		<%= link_to_category_search category.name  %>
+		<% if category.has_sub_categories? %>
+		<ul>
+			<% @sub_categories.each do |sub| %>
+			<li>
+				<%= link_to_sub_category_search sub.name  %>
+			</li>
+			<% end %>
+		</ul>
+		<% end %>
 	</li>
 	<% end %>
 

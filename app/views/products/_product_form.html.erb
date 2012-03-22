@@ -1,21 +1,35 @@
-<div class="center_box">
+<div class = "center_box">
 
 <%= semantic_form_for @product, :url => path, :html => { :multipart => true } do |form| %>
-<%= form.input :title %>
-<%= form.input :description %>
-<%= form.input :category, :as => :select, :collection => Category.all %>
-<%= form.input :sub_category, :as => :select, 
-:collection => SubCategory.all, 
-:input_html => { :disabled => true } %>
-<%= form.input :image, :as => :file %>
-<%= image_tag @product.image.url(:thumb) %>
-<%= form.input :pdf, :as => :file %>
+	<%= form.input :title %>
+	<%= form.input :description %>
+	<%= form.input :category, :as => :select, :collection => Category.all %>
+	<%= form.input :sub_category, :as => :select, 
+	:collection => SubCategory.all, 
+	:input_html => { :disabled => true } %>
+	<%= form.input :image, :as => :file %>
+	<%= image_tag @product.image.url(:thumb) %>
+	<%= form.input :pdf, :as => :file %>
 
-<%= form.commit_button %>
+	<%= form.commit_button %>
 <% end %>
 
-<% @product.specs do |spec| %>
-<%= spec.title + " " + spec.value if spec %>
+<% if @product.valid? %>
+	
+	<%= render :partial => "products/specs/form", :locals => {:url => product_specs_path(@product)} %>
+	
+	<table class="table table-striped">
+		<tbody>
+			<% @product.specs.each do |spec| %>
+			<tr>
+				<td><strong><%= spec.title %></strong></td>
+				<td><%= spec.value %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+	
 <% end %>
+
 
 </div><!-- .center_box -->

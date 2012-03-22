@@ -2,10 +2,12 @@ require 'spec_helper'
 
 describe Spec do
   
+  before(:each) do
+     @spec = Spec.new
+   end
+  
   describe "validations" do
-    before(:each) do
-      @spec = Spec.new
-    end
+ 
     
     it "should not be valid without title & value" do
       @spec.should_not be_valid
@@ -18,6 +20,18 @@ describe Spec do
                                   :pdf_file_name => "some pdf url",
                                   :title => "foo cam")
       @spec.should be_valid
+    end
+  end
+  
+  describe "text_description" do
+    
+    before(:each) do
+      @spec.title = "Length"
+      @spec.value = "10"
+    end
+    
+    it "should return formatted title and value" do
+      @spec.text_description.should eq "Length: 10"
     end
   end
   

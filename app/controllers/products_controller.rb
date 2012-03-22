@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
   end
   
   def edit
-    get_product
+    get_product    
   end
   
   def update
@@ -48,7 +48,7 @@ class ProductsController < ApplicationController
   private
   
   def get_product
-    @product = Product.find(params[:id])
+    @product = Product.find(params[:id],:include => [:specs] )
   end
   
 end
