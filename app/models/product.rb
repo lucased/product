@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
   belongs_to :category
   belongs_to :sub_category
 
-  validates_presence_of :image_file_name, :pdf_file_name, :title, :category
+  validates_presence_of :image_file_name, :title, :category
   
   validates_attachment_content_type :pdf, :content_type =>['application/pdf']
 
