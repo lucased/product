@@ -1,5 +1,5 @@
 class Products::SpecsController < ApplicationController
-  before_filter :get_product, :only => [:new, :index, :create]
+  before_filter :get_product, :only => [:new, :index, :create, :destroy]
   
   def new
     @spec = @product.specs.new
@@ -12,6 +12,17 @@ class Products::SpecsController < ApplicationController
     else
       render new
     end
+  end
+  
+  def destroy
+    @product = Product.find(params[:product_id])
+    @spec = @product.specs.find(params[:id])
+    if @spec.destroy
+      flash[:notice] = "Spec Deleted"
+    else
+      flash[:alert] = "Spec failed to delete"
+    end
+     redirect_to products_path
   end
   
   private
