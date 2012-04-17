@@ -7,13 +7,13 @@
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
 Category.delete_all
-["Jibs & Cranes", "Remote Heads", "Dollies & Tracks", "Vehicles", "Mounts & Risers"].each do |category|
+["Jibs & Cranes", "Remote Heads", "Dollies & Tracks", "Vehicles", "Accessories"].each do |category|
   Category.create(:name => category)
 end
 
 SubCategory.delete_all
 
-{"Jibs & Cranes" => ["Mini-Jib", "Jimmy Jib Triangle", "Jimmy Jib Tube", "Jumbo"], 
+{"Jibs & Cranes" => ["Mini-Jib", "Techno Jib", "Jimmy Jib Triangle", "Jimmy Jib Tube", "Jumbo"], 
 "Remote Heads" => [],
 "Dollies & Tracks" => [],
 "Vehicles" => [],

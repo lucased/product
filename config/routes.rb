@@ -8,6 +8,7 @@ Fotos::Application.routes.draw do
   get "pages/home" => "pages#home"
   get "pages/about" => "pages#about"
   get "pages/gallery" => "pages#gallery"
+  get "pages/equipment" => "pages#equipment"
   #get "pages/contact" => "pages#contact"
 
       

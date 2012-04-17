@@ -1,0 +1,50 @@
+
+<div id="wrapper"><!-- wrapper start -->
+	<div id="top_wrapper"><!-- top wrapper start -->
+		<div id="top_wrapper_line_t"></div><!-- top line of the top wrapper -->
+		<div id="header" class="broof_grid"><!-- header start -->
+
+			<a href="<%= root_path %>" id="logo"><img src="../../images/logo.png" alt="logo" /></a><!-- Your logo here -->
+
+			<%= render 'pages/nav'%>
+
+			<div class="clear"></div><!-- clear navigation and logo -->
+		</div><!-- header end -->
+	</div><!-- top wrapper end -->
+
+	<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
+
+	<div class="broof_grid"><!-- content start -->
+
+
+
+		<div class="devider_top"></div>
+
+		<ul class="portfolio">
+			<li class ="one_third">
+				<span class="title">Jibs &amp; Cranes</span>
+				<a id="various" data-toggle="modal" href="#"><%= image_tag "equip_jib.jpg" %></a>
+			</li>
+
+			<li class ="one_third">
+				<span class="title">Remote Heads</span> 
+				<a id="various" data-toggle="modal" href="#"><%= image_tag "equip_head.jpg" %></a>
+			</li>
+
+			<li class ="one_third">
+				<span class="title">Dollies &amp; Tracks</span>
+				<a id="various" data-toggle="modal" href="#"><%= image_tag "equip_track.jpg" %></a>
+			</li>
+
+			<li class ="one_third">
+				<span class="title">Vehicles</span>
+				<a id="various" data-toggle="modal" href="#"><%= image_tag "equip_car.jpg" %></a>
+			</li>
+
+			<li class ="one_third">
+				<span class="title">Accessories</span>
+				<a id="various" data-toggle="modal" href="#"></a>
+			</li>
+		</ul>
+
+	</div><!-- content end -->
