@@ -438,7 +438,13 @@ ul.portfolio .one_third {
   height: 140px;
   padding: 5px 0px 13px 0px;
   background: url(portfolio_small_bg.png);
+  margin-bottom: 40px;
 }
+
+ul.portfolio .one_third p {
+  padding-top: 35px;
+}
+
 ul.portfolio .one_fourth {
   width: 207px;
   height: 100px;
