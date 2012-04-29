@@ -428,7 +428,7 @@ ul.portfolio .one {
   background: url(portfolio_big_bg.png);
 }
 ul.portfolio .one_half {
-  width: 455px;
+  width: 440px;
   height: 190px;
   padding: 5px 5px 13px 5px;
   background: url(portfolio_medium_bg.png);
@@ -474,12 +474,14 @@ ul.portfolio .one.description {
 }
 
 span.title {
-  background: url(portfolio_title.png) top right;
+  /*background: url(portfolio_title.png) top right;*/
   text-align: left;
   position: absolute;
   padding: 1px 8px 1px 5px;
-  bottom: 21px;
+  top: 155px;
   line-height: 21px;
+  background-color: #FFFFFF;
+  border: solid 1px #C1C1C1;
 }
 
 /*Blog Styles*/
