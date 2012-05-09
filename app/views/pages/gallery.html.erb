@@ -14,8 +14,34 @@
 	<div class="broof_grid">
 		<!-- content start -->
 		<div id="gallery">
+			
 			<!-- <img src="../images/coin_slider/slide1.jpg"> -->
 		</div>
+		
+		<div class="devider_side"></div>
+		<div class="clear"></div>
+
+		<div id="video">
+			<h3>Video's:</h3>
+			<ul class="portfolio">
+				<li class="one_fourth"><a data-toggle="modal" href="#vid01"><%= image_tag "video/vid01.jpg" %></a></li>
+			</ul>
+		</div><!-- #video -->
+		<div class="clear"></div>
+		
+		<div class="modal hide fade" id="vid01">
+		  <div class="modal-header">
+		    <button class="close" data-dismiss="modal">×</button>
+		    <h3>James O’Connor TVC</h3>
+		  </div>
+		  <div class="modal-body">
+		    <iframe src="http://player.vimeo.com/video/25441719" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" data-dismiss="modal" class="btn">Close</a>
+		  </div>
+		</div>
+		
 	</div><!-- content end -->
 	<!-- Galleria Initiate -->
 	<script type="text/javascript">
@@ -24,7 +50,8 @@
 		width: 960,
 		height: 600,
 		picasa: 'useralbum:103761947043385223751/scc', // 'galleriajs' is the username and 'Demo' is the album ID
-		picasaOptions: { sort: 'date-posted-asc'}
+		picasaOptions: { sort: 'date-posted-asc', max: 100}
 	});
 	</script>
+
 </div>

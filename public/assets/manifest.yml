@@ -119,12 +119,13 @@ test_flexibilty.png: test_flexibilty-7d40f29678c74c4b447aa71f56bc0122.png
 test_image.png: test_image-1f2965e35ae2acdb3cfc6e3dad6c7974.png
 test_imageboarder.png: test_imageboarder-c14b32752ef0342954daed30ade1ab07.png
 test_quality.png: test_quality-4b4bfdfd99c1c5c9d90354d52a99865f.png
+video/vid01.jpg: video/vid01-5460c4b92c0dbaa09f737f9e57b80717.jpg
 application.js: application-c12771a4e35919e81cf66f7fe40574c7.js
 basic/img/basic/x.png: basic/img/basic/x-eb65e2eb38863508d540d0e1c2aeb059.png
 basic/index.html: basic/index-86d71e390b919c15622045f790a76038.html
 content_slider/content_area.png: content_slider/content_area-df73a854bcbc376ccc21adf0995f9507.png
 content_slider/nav.png: content_slider/nav-c562650eee80bbaea050c81cdf9fa000.png
 content_slider/shadow.png: content_slider/shadow-7085d39bb6639447bbbfef003d7a9b0c.png
-application.css: application-47aed071292178bf1ff479f274ac46b0.css
+application.css: application-4053748e266aa88cec608cd7dff0f3e2.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-33137abcd2c204b90921315632a32a69.png
 glyphicons-halflings.png: glyphicons-halflings-16cd9c1e6492843e6e32e0ab12967378.png
