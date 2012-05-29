@@ -880,10 +880,11 @@ tr.d2 td {
 /*------------------------- SIGN UP / LOGIN ----------------------*/
 
 .center_box, {
-  width: 400px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .center_box li{
   list-style-image: none;
