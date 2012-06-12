@@ -38,6 +38,10 @@ p {
   font-size: 14px;
 }
 
+.text-center p{
+  text-align: center;
+}
+
 pre {
   margin: 15px 0;
   padding: 15px 5px;

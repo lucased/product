@@ -19,17 +19,33 @@
 		});
 	});
 	</script>
+	
+	<!-- GOOGLE ANALYTICS -->
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32557764-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 
 </head>
 <body id="dynamic">
-
+	
+	<% content_for_admin do  %>
 	<div id="login">
 		<%= user_login %> |
-		<%= link_to "Home", products_path %>
-		<% content_for_admin do  %> |
+		<%= link_to "Home", products_path %> |
 		<%= link_to "New", new_product_path %>
-		<% end %>
 	</div>
+	<% end %>
 	
 	<div class="alert-message">
 		<a class="close" data-dismiss="alert">×</a>

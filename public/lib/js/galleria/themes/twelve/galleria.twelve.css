@@ -245,3 +245,7 @@
 .galleria-carousel .galleria-thumb-nav-right { display: block }
 .galleria-lightbox-content { background: url(loader_pos.gif) no-repeat 50% 50% }
 
+.galleria-content img {
+max-width: none !important;
+}
+
