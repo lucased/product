@@ -11,7 +11,8 @@ class ProductsSearchController < ApplicationController
   end
   
   def category_search
-    @category = Category.find_by_name(params[:term])
+    @term = params[:term]
+    @category = Category.find_by_name @term
     if @category.nil?
       redirect_to products_path, :alert => "Category not found"
     else

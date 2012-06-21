@@ -15,15 +15,23 @@
 		<div id="top_wrapper_line_b"></div><!-- bottom line of the top wrapper -->
 
 		<div class="broof_grid"><!-- content start -->
+			
+			<% if @term == 'Jibs & Cranes' %>
+			
+				<%= render "products/jibs_cranes_nav" %>
+			
+			<% else %>
+			
+				<%= render "products/equip_nav" %>
+			
+				<div class="devider_top"></div>
 
-			<%= render 'products/equip_nav'%>
+					<ul class="portfolio">
+						<%= render :partial => 'products/product', :collection => @products %>
+					</ul>
 
-			<div class="devider_top"></div>
-
-			<ul class="portfolio">
-				<%= render :partial => 'products/product', :collection => @products %>
-			</ul>
-
-			<%= render :partial => 'products/content_box', :collection => @products, :as => :product %>
-
+					<%= render :partial => 'products/content_box', :collection => @products, :as => :product %>
+			<% end %>
 		</div><!-- content end -->
+		
+		 
