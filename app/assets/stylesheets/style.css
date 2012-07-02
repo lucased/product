@@ -152,7 +152,7 @@ body#dynamic #header {
   display: none;
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 25px;
   margin: 0;
   padding: 0 11px;
   z-index: 200;
@@ -947,8 +947,8 @@ body{ background-color:#f4f4f4; color:#666;}
 		#navigation li a:hover, #navigation li a.active { color:#fff;}
 			#navigation ul{background:url(carbon/dropdown_repeat.png) repeat-y;}
 				#navigation ul li{ border-bottom:1px solid #121212; border-top:1px solid #2e2e2e;}
-				#navigation ul li.dropdown_top{ background:url(carbon/dropdown_top.png) no-repeat;}
-				#navigation ul li.dropdown_bottom{ background:url(carbon/dropdown_bottom.png) no-repeat;}
+        #navigation ul li.dropdown_top{ background:url(carbon/dropdown_top.png) no-repeat;}
+        /*#navigation ul li.dropdown_bottom{ background:url(carbon/dropdown_bottom.png) no-repeat;}*/
 
 	/*Footer*/
 	#footer_wrapper{ background-color:#111;}
