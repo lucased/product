@@ -36,6 +36,7 @@ gem 'contact_us', '~> 0.2.0'
 gem 'formtastic-bootstrap'
 gem 'aws-s3'
 gem 'aws-sdk', '1.7.1'
+gem 'newrelic_rpm'
 
 group :test, :development do
   gem 'sqlite3', '1.3.4'
