@@ -1,12 +1,12 @@
 development:
   bucket: spectrum-bucket-pro
-  access_key_id: AKIAJH7POBJLDENHRNNQ
-  secret_access_key: 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
+  access_key_id: <%= ENV['S3_ID'] %>
+  secret_access_key: <%= ENV['S3_KEY'] %>
 test:
   bucket: spectrum-bucket-test
-  access_key_id: AKIAJH7POBJLDENHRNNQ
-  secret_access_key: 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
+  access_key_id: <%= ENV['S3_ID'] %>
+  secret_access_key: <%= ENV['S3_KEY'] %>
 production:
   bucket: spectrum-bucket-pro
-  access_key_id: AKIAJH7POBJLDENHRNNQ
-  secret_access_key: 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
+  access_key_id: <%= ENV['S3_ID'] %>
+  secret_access_key: <%= ENV['S3_KEY'] %>
