@@ -11,6 +11,9 @@ Fotos::Application.routes.draw do
   get "pages/equipment" => "pages#equipment"
   #get "pages/contact" => "pages#contact"
 
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+
       
   root :to => "pages#home"
   

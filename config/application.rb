@@ -46,5 +46,10 @@ module Fotos
     config.assets.version = '1.0'
     
     config.assets.paths << "#{Rails.root}/app/assets/javascripts/nivo-slider/themes/default"
-  end
+
+
+  
 end
+end
+
+

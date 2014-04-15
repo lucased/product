@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lucasdobbins/Development/Product/config/environment.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/lucasdobbins/Development/Product/config/application.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/application.rb": [
         1,
         null,
         1,
@@ -60,7 +60,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/boot.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/boot.rb": [
         1,
         null,
         null,
@@ -68,7 +68,7 @@
         null,
         1
       ],
-      "/Users/lucasdobbins/Development/Product/config/environments/test.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/environments/test.rb": [
         1,
         null,
         null,
@@ -109,7 +109,7 @@
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/backtrace_silencers.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -118,7 +118,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/contact_us.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/contact_us.rb": [
         null,
         1,
         null,
@@ -142,7 +142,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/formtastic.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/formtastic.rb": [
         null,
         null,
         1,
@@ -218,18 +218,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -241,14 +229,26 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/mime_types.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/secret_token.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -257,7 +257,7 @@
         null,
         1
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/session_store.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -267,7 +267,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/initializers/wrap_parameters.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -283,7 +283,7 @@
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/application_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -299,7 +299,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/application_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -335,35 +335,35 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/pages_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/products_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/products_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/products/images_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/products/images_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/products/specs_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/products/specs_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/products_search_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/products_search_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/sessions_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/helpers/users_helper.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/pages_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
@@ -385,7 +385,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/products/image_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/products/image_controller.rb": [
         1,
         1,
         6,
@@ -399,7 +399,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/products/specs_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/products/specs_controller.rb": [
         1,
         1,
         null,
@@ -434,32 +434,32 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/models/spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/models/spec.rb": [
         1,
         1,
         null,
         1,
         null,
         1,
-        1,
+        0,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/products_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/products_controller.rb": [
         1,
         1,
         1,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        3,
+        0,
         null,
         null,
         1,
@@ -496,12 +496,12 @@
         1,
         null,
         1,
-        12,
+        9,
         null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/models/product.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/models/product.rb": [
         1,
         1,
         1,
@@ -530,7 +530,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/shared/navigation_methods.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/shared/navigation_methods.rb": [
         1,
         1,
         null,
@@ -541,32 +541,32 @@
         null,
         null,
         1,
-        5,
+        0,
         null,
         null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/products_search_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/products_search_controller.rb": [
         1,
         1,
         null,
         1,
-        4,
-        4,
-        2,
+        0,
+        0,
+        0,
         null,
-        2,
+        0,
         null,
         null,
         null,
         1,
-        4,
-        4,
-        4,
-        2,
+        0,
+        0,
+        0,
+        0,
         null,
-        2,
+        0,
         null,
         null,
         null,
@@ -578,12 +578,12 @@
         null,
         null,
         1,
-        8,
+        0,
         null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/sessions_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -605,7 +605,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/controllers/users_controller.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -625,7 +625,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/models/user.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/models/user.rb": [
         1,
         1,
         1,
@@ -636,7 +636,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/models/category.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/models/category.rb": [
         1,
         1,
         1,
@@ -647,13 +647,13 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/app/models/sub_category.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/app/models/sub_category.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/config/routes.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/config/routes.rb": [
         1,
         null,
         1,
@@ -684,7 +684,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/products/image_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/products/image_controller_spec.rb": [
         1,
         null,
         1,
@@ -739,14 +739,14 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/products/specs_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/products/specs_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/products_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/products_controller_spec.rb": [
         1,
         null,
         1,
@@ -772,7 +772,7 @@
         1,
         1,
         1,
-        1,
+        0,
         null,
         null,
         null,
@@ -953,7 +953,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/products_search_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/products_search_controller_spec.rb": [
         1,
         null,
         1,
@@ -977,51 +977,51 @@
         1,
         1,
         1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
         1,
         null,
         null,
         1,
         1,
         1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
         null,
         null,
         null,
         null,
         1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        null,
         null,
         1,
         4,
+        4,
+        4,
+        4,
+        null,
+        null,
+        null,
+        1,
+        4,
         null,
         null,
         1,
         1,
         1,
-        1,
+        0,
         null,
         null,
         1,
         1,
         1,
-        1,
+        0,
         null,
         null,
         1,
@@ -1040,14 +1040,14 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/sessions_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/sessions_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/controllers/users_controller_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/controllers/users_controller_spec.rb": [
         1,
         null,
         1,
@@ -1132,7 +1132,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/application_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/application_helper_spec.rb": [
         1,
         null,
         1,
@@ -1169,7 +1169,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/pages_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/pages_helper_spec.rb": [
         1,
         null,
         null,
@@ -1186,7 +1186,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/products/images_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/products/images_helper_spec.rb": [
         1,
         null,
         null,
@@ -1203,7 +1203,7 @@
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/products/specs_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/products/specs_helper_spec.rb": [
         1,
         null,
         null,
@@ -1220,7 +1220,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/products_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/products_helper_spec.rb": [
         1,
         null,
         null,
@@ -1237,7 +1237,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/products_search_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/products_search_helper_spec.rb": [
         1,
         null,
         null,
@@ -1254,7 +1254,7 @@
         1,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/sessions_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/sessions_helper_spec.rb": [
         1,
         null,
         null,
@@ -1271,7 +1271,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/helpers/users_helper_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/helpers/users_helper_spec.rb": [
         1,
         null,
         null,
@@ -1288,7 +1288,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/models/category_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/models/category_spec.rb": [
         1,
         null,
         1,
@@ -1298,7 +1298,7 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
@@ -1306,7 +1306,7 @@
         1,
         null,
         1,
-        1,
+        0,
         null,
         null,
         null,
@@ -1315,11 +1315,11 @@
         1,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         null,
@@ -1330,7 +1330,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/models/product_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/models/product_spec.rb": [
         1,
         null,
         1,
@@ -1342,58 +1342,58 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
         1,
         0,
         null,
         null,
         1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        null,
         1,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
         0,
         null,
         null,
@@ -1403,7 +1403,7 @@
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/models/spec_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/models/spec_spec.rb": [
         1,
         null,
         1,
@@ -1416,74 +1416,74 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null,
-        1,
+        0,
         null,
         null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/lucasdobbins/Development/Product/spec/models/sub_category_spec.rb": [
-        1,
         null,
         1,
         null,
         1,
+        0,
+        0,
+        null,
+        null,
         1,
-        1,
+        0,
+        null,
         null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/models/user_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/models/sub_category_spec.rb": [
         1,
         null,
         1,
+        null,
+        1,
+        1,
+        0,
+        null,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/views/pages/about.html.erb_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/models/user_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/views/pages/contact.html.erb_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/views/pages/about.html.erb_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/views/pages/gallery.html.erb_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/views/pages/contact.html.erb_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/lucasdobbins/Development/Product/spec/views/pages/home.html.erb_spec.rb": [
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/views/pages/gallery.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/lucasdobbins/Dropbox/clients/Spectrum/product/spec/views/pages/home.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1491,7 +1491,7 @@
         null
       ]
     },
-    "timestamp": 1340606842
+    "timestamp": 1397453810
   },
   "/tmp/textmate-command-28442.rb ": {
     "coverage": {
