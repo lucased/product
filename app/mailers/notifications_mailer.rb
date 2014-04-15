@@ -1,7 +1,7 @@
 class NotificationsMailer < ActionMailer::Base
 	
 	default from: "noreply@spectrumcameracranes.com.au"
-	default to: "lucasdobbins@gmail.com"
+	default to: "info@spectrumcameracranes.com.au"
 
 	def new_message(message)
 		@message = message
